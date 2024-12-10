@@ -1,6 +1,3 @@
-Hier ist das Readme für **Responsive Design mit HTML5 und CSS3**, nach dem gleichen Muster erstellt:
-
----
 
 # Responsive Design mit HTML5 und CSS3
 
