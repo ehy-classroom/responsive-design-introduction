@@ -1,0 +1,48 @@
+/*
+Stylesheet für Responsive Design - Erste Schritte
+*/
+
+
+/* Mobile-first styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 2em
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+
+section {
+    min-height: 100vh;
+}
+
+/* Breakpoint at 580px */
+@media (min-width: 580px) {
+
+}
+
+/* Breakpoint at 900px */
+@media (min-width: 900px) {
+
+nav > ul {
+    display: flex;
+    flex-wrap_ wrap;
+    gap: 1em;
+}
+
+    nav a {
+        font-size: 1em
+    }
+
+}
+
+/* Breakpoint at 1200px */
+@media (min-width: 1200px) {
+
+}
