@@ -1,9 +1,36 @@
 /*
 Stylesheet für Responsive Design - Erste Schritte
+Schritt 2
 */
 
 
+/*---------------------
+RESET
+---------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+
 /* Mobile-first styles */
+/*---------------------
+LAYOUT
+---------------------*/
+
+h1,h2,h3,h4,h5,h6,p,figure {
+    margin-bottom: 1em;
+}
+
+.container {
+    padding: 1em 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
 body {
     font-family: Arial, sans-serif;
 }
@@ -19,9 +46,55 @@ nav ul {
 
 
 section {
-    min-height: 100vh;
+    min-height: 34vh;
 }
 
+
+/*---------------------
+COLOR & STYLE
+---------------------*/
+
+body {
+    background-color: hsl(200,34%,13%);
+    color: #fff;
+}
+
+a {
+    color: #fff;
+}
+
+nav,
+header {
+    background-color: hsl(200,34%,55%);
+}
+
+main {
+    background: #fff;
+}
+
+
+section {
+    background-color: hsl(100,34%,55%);
+}
+
+section:nth-child(2) {
+    background-color: hsl(300,34%,55%);
+}
+
+section:nth-child(3) {
+    background-color: hsl(30,76%,55%);
+}
+
+section:nth-child(4) {
+    background-color: hsl(250,34%,55%);
+}
+
+
+
+
+/*---------------------
+RESPONSIVE
+---------------------*/
 /* Breakpoint at 580px */
 @media (min-width: 580px) {
 
@@ -30,7 +103,7 @@ section {
 /* Breakpoint at 900px */
 @media (min-width: 900px) {
 
-nav > ul {
+nav > .container > ul {
     display: flex;
     flex-wrap_ wrap;
     gap: 1em;
