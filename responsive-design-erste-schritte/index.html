@@ -16,7 +16,20 @@
         </div>
     </header>
 
-    <nav>
+    <nav class="burger-icon-container">
+
+        <div class="container">
+            <a href="#mobile-nav">
+                <div class="burger-icon">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </a>
+        </div>
+    </nav>
+
+    <nav class="main-nav">
         <div class="container">
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -39,7 +52,8 @@
             <div class="container">
                 <h2>Über uns</h2>
                 <p>Informationen über unser Unternehmen.
-                    Dies ist ein Typoblindtext. An ihm kann man sehen, ob alle Buchstaben da sind und wie sie aussehen.
+                    Dies ist ein <a href="https://de.wikipedia.org/wiki/Blindtext" target="_blank">Typoblindtext</a>. An
+                    ihm kann man sehen, ob alle Buchstaben da sind und wie sie aussehen.
                     Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder Handgloves, um Schriften zu testen.
                     Manchmal Sätze, die alle Buchstaben des Alphabets enthalten - man nennt diese Sätze »Pangrams«.
                 </p>
@@ -70,9 +84,28 @@
 
     <footer>
         <div class="container">
+
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#">Impressum</a></li>
+                    <li><a href="#">Datenschutz</a></li>
+                </ul>
+            </nav>
+
             <p>&copy; 2024 Enno Hyttrek. Alle Rechte vorbehalten.</p>
         </div>
     </footer>
+
+    <nav id="mobile-nav" class="mobile-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">Über uns</a></li>
+                <li><a href="#services">Dienstleistungen</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
 
 </body>
 

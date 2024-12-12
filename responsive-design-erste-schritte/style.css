@@ -1,6 +1,6 @@
 /*
 Stylesheet für Responsive Design - Erste Schritte
-Schritt 2
+Schritt 3
 */
 
 
@@ -12,6 +12,11 @@ RESET
     padding: 0;
     box-sizing: border-box;
 } 
+
+
+nav.main-nav {
+    display: none;
+}
 
 
 /* Mobile-first styles */
@@ -35,9 +40,51 @@ body {
     font-family: Arial, sans-serif;
 }
 
+nav.mobile-nav,
+header {
+    padding-top: 80px;
+}
+
+/*---------------------
+NAVIGATION
+---------------------*/
+
+.burger-icon {
+    width: 48px;
+    height: 48px;
+    padding: 4px;
+}
+
+.burger-icon div {
+    height: 8px;
+    background: #fff;
+    margin-bottom:8px;
+}
+
+nav.burger-icon-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+nav.main-nav {
+    position: sticky;
+    top: 0;
+}
+
+
+nav.mobile-nav {
+    min-height: 100vh;
+}
+
+
 nav a {
     text-decoration: none;
-    font-size: 2em
+}
+
+nav.mobile-nav .container a {
+    font-size: 2em;
 }
 
 nav ul {
@@ -63,9 +110,14 @@ a {
     color: #fff;
 }
 
-nav,
+nav.main-nav,
 header {
     background-color: hsl(200,34%,55%);
+}
+
+nav.burger-icon-container,
+nav.main-nav {
+    background-color: hsla(200,34%,55%,0.9);
 }
 
 main {
@@ -103,6 +155,15 @@ RESPONSIVE
 /* Breakpoint at 900px */
 @media (min-width: 900px) {
 
+    nav.main-nav {
+        display: block;
+    }
+
+    nav.burger-icon-container,
+    nav.mobile-nav {
+        display: none;
+    }
+
 nav > .container > ul {
     display: flex;
     flex-wrap_ wrap;
@@ -110,7 +171,7 @@ nav > .container > ul {
 }
 
     nav a {
-        font-size: 1em
+        font-size: 1em;
     }
 
 }
