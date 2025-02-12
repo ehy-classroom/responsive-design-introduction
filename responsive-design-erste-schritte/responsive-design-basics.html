@@ -12,11 +12,11 @@
 RESET
 ---------------------*/
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
 
 
@@ -25,14 +25,30 @@ RESET
 LAYOUT
 ---------------------*/
 
-h1,h2,h3,h4,h5,h6,p {
-margin-bottom: 1em;
-}
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            margin-bottom: 1em;
+        }
 
         .container {
             max-width: 900px;
             margin: 0 auto;
-            padding: 1em 20px;
+            padding: 1em 8px;
+        }
+
+        section>.container {
+            max-width: 100%
+        }
+
+        main>.container {
+            display: flex;
+            padding: 0;
+            flex-wrap: wrap;
         }
 
 
@@ -52,8 +68,47 @@ COLOR
             background: hsl(30, 80%, 50%)
         }
 
+        .section-03 {
+            background: hsl(50, 80%, 50%)
+        }
+
         footer {
             background: hsl(300, 50%, 50%)
+        }
+
+
+
+        /*---------------------
+RESPONSIVE
+---------------------*/
+        /* Breakpoint at 580px */
+        @media (min-width: 580px) {
+
+            div.card {
+                width: 50%;
+   
+            }
+
+            div.card section {
+                height: 70vh;
+            }
+
+        }
+
+        /* Breakpoint at 900px */
+        @media (min-width: 900px) {
+
+            div.card {
+                width: 33.33%;
+            }
+
+        }
+
+        /* Breakpoint at 1200px */
+        @media (min-width: 1200px) {
+
+
+
         }
     </style>
 
@@ -67,33 +122,72 @@ COLOR
         </div>
     </header>
     <main>
-        <section class="section-01">
-            <div class="container">
-                <h2>Introduction</h2>
-                <p>This is an introduction to responsive design. The quick, brown fox jumps over a lazy dog. DJs flock
-                    by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs.
-                    Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy
-                    veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs
-                    blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft jumping zebras vex.
-                    Two driven jocks help fax my big quiz. </p>
+        <div class="container main.container">
+            <div class="wrapper card">
+                <section class="section-01">
+                    <div class="container">
+                        <h2>Introduction</h2>
+                        <p>This is an introduction to responsive design. The quick, brown fox jumps over a lazy dog. DJs
+                            flock
+                            by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex
+                            nymphs.
+                            Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs
+                            jumpy
+                            veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick
+                            zephyrs
+                            blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft jumping zebras
+                            vex.
+                            Two driven jocks help fax my big quiz. </p>
+                    </div>
+                </section>
             </div>
-        </section>
 
-        <section class="section-02">
-            <div class="container">
-                <h2>Basic Layout</h2>
-                <p>Here we see a basic layout which behaves responsive. The quick, brown fox jumps over a lazy dog. DJs
-                    flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex
-                    nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs
-                    jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick
-                    zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft jumping zebras
-                    vex. Two driven jocks help fax my big quiz. </p>
+            <div class="wrapper card">
+                <section class="section-02">
+                    <div class="container">
+                        <h2>Basic Layout</h2>
+                        <p>Here we see a basic layout which behaves responsive. The quick, brown fox jumps over a lazy
+                            dog.
+                            DJs
+                            flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz,
+                            vex
+                            nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz
+                            whangs
+                            jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim.
+                            Quick
+                            zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft
+                            jumping
+                            zebras
+                            vex. Two driven jocks help fax my big quiz. </p>
+                    </div>
+                </section>
             </div>
-        </section>
+
+            <div class="wrapper card">
+                <section class="section-03">
+                    <div class="container">
+                        <h2>Responsive</h2>
+                        <p>Here we see a basic layout which behaves responsive. The quick, brown fox jumps over a lazy
+                            dog.
+                            DJs
+                            flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz,
+                            vex
+                            nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz
+                            whangs
+                            jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim.
+                            Quick
+                            zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft
+                            jumping
+                            zebras
+                            vex. Two driven jocks help fax my big quiz. </p>
+                    </div>
+                </section>
+            </div>
+        </div><!-- /.main-container -->
     </main>
     <footer>
         <div class="container">
-        <p>&copy; 2023 Responsive Design Basics</p>
+            <p>&copy; 2023 Responsive Design Basics</p>
         </div>
     </footer>
 </body>
