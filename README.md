@@ -5,6 +5,8 @@ Enno Hyttrek, November 2024
 
 https://ehy-classroom.github.io/responsive-design-introduction/
 
+https://ehy-classroom.github.io/responsive-design-introduction/responsive-design-erste-schritte/
+
 ---
 
 ### Was ist Responsive Design und warum ist es wichtig?
